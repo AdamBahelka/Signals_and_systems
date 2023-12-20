@@ -1,3 +1,7 @@
+#  Signals and Systems: Homework 1 
+#  Exercise 7: Multipath fading
+#  Ditu Alexandru (s4004027)
+#  Bahelka Adam (s4887832)
 import math
 
 def get_input_data():
@@ -23,12 +27,15 @@ def sum_sinusoids(f, sinusoids):
     return A, phi
 
 def print_output_data(f, A, phi):
-    if A == 0:
+    if round(A, 2) == 0:
         print("x(t)=0.00")
     else:
         # Adjusting phase to match the formula
         phi_adjusted = phi % (2 * math.pi)
+        if phi_adjusted > math.pi:
+            phi_adjusted -= 2 * math.pi
         print("x(t)={:.2f}cos(2*pi*{}*t+{:.2f})".format(A, f, phi_adjusted))
+
 
 def main():
     f, sinusoids = get_input_data()
