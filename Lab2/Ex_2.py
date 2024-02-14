@@ -1,3 +1,6 @@
+#  Signals and Systems: Homework 2 
+#  Ditu Alexandru (s4004027)
+#  Bahelka Adam (s4887832)
 def custom_convolution(h, x):
     # Lengths of the input signal and the filter
     len_x = len(x)

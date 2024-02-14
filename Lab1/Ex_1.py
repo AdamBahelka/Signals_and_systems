@@ -1,5 +1,4 @@
 #  Signals and Systems: Homework 1 
-#  Exercise 7: Multipath fading
 #  Ditu Alexandru (s4004027)
 #  Bahelka Adam (s4887832)
 import math
